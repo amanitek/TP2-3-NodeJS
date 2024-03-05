@@ -1,6 +1,9 @@
 const express = require('express');
 const voiture = require ('./routes/voiture');
+const authRoutes = require('./routes/auth');
+const postRoutes = require('./routes/post');
 const mongoose = require('mongoose');
+
 const app = express();
 const dotenv = require ('dotenv'); //pour lire les variables d'environnements
 dotenv.config()
@@ -44,3 +47,8 @@ app.listen(PORT,()=>{
 
 /*app.listen(9000,()=>{
 console.log('Server is running on port 9000 ...')})*/
+
+
+
+
+
